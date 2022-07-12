@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_12mdp">
+
+    <!--Rounded poster view-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_lastMovie"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_140mdp"
+        android:backgroundTint="@color/chineseBlack"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Image-->
+        <ImageView
+            android:id="@+id/iv_lastMovieImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8mdp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_lastMovie"
+        app:layout_constraintTop_toTopOf="@id/cv_lastMovie"
+        tools:text="Title" />
+
+    <!--Rate-->
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:drawablePadding="@dimen/_4mdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/philippineSilver"
+        android:textSize="@dimen/_12font_mdp"
+        app:drawableStartCompat="@drawable/ic_round_star"
+        app:drawableTint="@color/philippineSilver"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="8.9" />
+
+    <!--Country-->
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:drawablePadding="@dimen/_4mdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/philippineSilver"
+        android:textSize="@dimen/_12font_mdp"
+        app:drawableStartCompat="@drawable/ic_round_language"
+        app:drawableTint="@color/philippineSilver"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating"
+        tools:text="Usa" />
+
+    <!--Years-->
+    <TextView
+        android:id="@+id/tv_years"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:drawablePadding="@dimen/_4mdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/philippineSilver"
+        android:textSize="@dimen/_12font_mdp"
+        app:drawableStartCompat="@drawable/ic_round_calendar_today"
+        app:drawableTint="@color/philippineSilver"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_country"
+        tools:text="2002" />
+
+    <!--More info-->
+    <TextView
+        android:id="@+id/tv_moreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:text="@string/moreInfo"
+        android:textColor="@color/scarlet"
+        app:drawableEndCompat="@drawable/ic_round_chevron_right"
+        app:drawableTint="@color/scarlet"
+        app:layout_constraintStart_toStartOf="@id/tv_years"
+        app:layout_constraintTop_toBottomOf="@id/tv_years" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

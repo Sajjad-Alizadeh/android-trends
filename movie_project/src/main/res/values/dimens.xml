@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">@dimen/_8mdp</dimen>
+
+    <dimen name="standard_font_size">@dimen/_12font_mdp</dimen>
+
+</resources>
