@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/coroutine" />
             <option value="$PROJECT_DIR$/datastore" />
             <option value="$PROJECT_DIR$/hilt" />
+            <option value="$PROJECT_DIR$/koin" />
             <option value="$PROJECT_DIR$/movie_project" />
           </set>
         </option>
